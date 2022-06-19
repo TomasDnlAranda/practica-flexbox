@@ -1,0 +1,74 @@
+* {
+	margin: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+/*====== contenedor padre ======*/
+.padre {
+	background: #fff;
+}
+
+/*====== contenedores hijos ======*/
+.header {
+	background: #000;
+}
+
+.section {
+	background: #000;
+}
+.footer {
+	background: #000;
+}
+
+/*======= elementos hijos de header ======*/
+.menu {
+	background: #590696;
+}
+
+.logo {
+	background: #f4e06d;
+}
+
+.nav {
+	background: #f4e06d;
+}
+
+.social {
+	background: #f4e06d;
+}
+
+.texto-principal {
+	background: #f15412;
+}
+
+h1 {
+	background: #34b3f1;
+}
+
+/*======= elementos hijos de section ======*/
+
+.articulos {
+	background: #1363df;
+}
+
+.article {
+	background: #990000;
+}
+
+.navegacion {
+	background: #b4ff9f;
+}
+
+.aside {
+	background: #fef9a7;
+}
+
+.publicidad {
+	background: #51557e;
+}
+
+/*======= elemento hijo de footer ======*/
+.pie {
+	background: #3ab0ff;
+}
