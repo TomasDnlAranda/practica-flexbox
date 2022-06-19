@@ -12,10 +12,14 @@
 /*====== contenedores hijos ======*/
 .header {
 	background: #000;
+	display: flex;
+	flex-direction: column;
 }
 
 .section {
 	background: #000;
+	display: flex;
+	flex-direction: column;
 }
 .footer {
 	background: #000;
@@ -24,18 +28,28 @@
 /*======= elementos hijos de header ======*/
 .menu {
 	background: #590696;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .logo {
 	background: #f4e06d;
+	height: 25px;
+	width: 100%;
 }
 
 .nav {
 	background: #f4e06d;
+	height: 25px;
+	flex-grow: 1;
+	width: 100%;
 }
 
 .social {
 	background: #f4e06d;
+	height: 25px;
+	display: none;
 }
 
 .texto-principal {
@@ -44,6 +58,7 @@
 
 h1 {
 	background: #34b3f1;
+	height: 50px;
 }
 
 /*======= elementos hijos de section ======*/
@@ -54,10 +69,12 @@ h1 {
 
 .article {
 	background: #990000;
+	height: 50px;
 }
 
 .navegacion {
 	background: #b4ff9f;
+	height: 50px;
 }
 
 .aside {
@@ -66,9 +83,143 @@ h1 {
 
 .publicidad {
 	background: #51557e;
+	height: 50px;
 }
 
 /*======= elemento hijo de footer ======*/
 .pie {
 	background: #3ab0ff;
+	height: 50px;
+}
+
+.logo-pie {
+	background: #3ab0ff;
+	height: 50px;
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.menu {
+		display: flex;
+		flex-direction: row;
+		height: 100px;
+	}
+
+	.nav {
+		flex-grow: 5;
+		width: 0;
+	}
+
+	.logo {
+		flex-grow: 1.5;
+		width: 0;
+	}
+
+	.social {
+		flex-grow: 1.5;
+		display: block;
+	}
+
+	.articulos {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex-grow: 1;
+	}
+
+	.article {
+		flex-basis: 45%;
+		margin: 10px auto;
+	}
+
+	.navegacion {
+		width: 100%;
+	}
+
+	.section {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.aside {
+		flex-grow: 1;
+	}
+
+	.footer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.logo-pie {
+		display: block;
+		flex-basis: 25%;
+	}
+
+	.pie {
+		flex-basis: 50%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.article {
+		height: 150px;
+	}
+
+	.navegacion {
+		height: 50px;
+	}
+
+	.aside {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.publicidad {
+		flex-grow: 1;
+	}
+
+	.navegacion {
+		display: none;
+	}
+
+	.logo {
+		height: 50px;
+		order: 2;
+	}
+
+	.nav {
+		height: 50px;
+		flex-grow: 8;
+		order: 1;
+	}
+
+	.social {
+		height: 50px;
+		order: 3;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+	}
+
+	.logo-pie {
+		display: block;
+		flex-basis: 0;
+		flex-grow: 5;
+	}
+
+	.pie {
+		flex-basis: 0;
+		flex-grow: 1;
+	}
+
+	.articulos {
+		flex-grow: 3;
+	}
+
+	.aside {
+		flex-grow: 1;
+	}
 }
